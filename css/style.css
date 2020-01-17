@@ -2,6 +2,7 @@ body {
   background-color: #ffffff;
   color: #232629;
   font-size: 16px;
+  text-align: center;
 }
 
 figcaption {
@@ -16,9 +17,13 @@ h3 {
   font-size: 150%
   line-height: 1.0;
 }
-
+/* a paragraph proceeded by another paragraph will have a top margin */
+p + p {
+    margin-top: 10px;
+}
 p {
-  font-size: 100% /*16px*/
+  font-size: 100%; /*16px*/
+  padding-bottom: 15px;
 }
 
 a:link {
@@ -38,7 +43,7 @@ a:active {
 }
 
 .story-text {
-  font-size: 100% /*16px*/
+  font-size: 100%; /*16px*/
   line-height: 1.4;
   text-align: left;
 }
@@ -80,7 +85,7 @@ ul {
 li {
   float: right;
   padding: 30px;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 article {
